@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 4em;
+}
+
+.nav-link {
+  font-size: 1.125rem;
+  color: #a5a5a5;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-color: #0c0d17;
+}
+
+.hero-content {
+  padding-top: 60px;
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.hero-content .logo {
+  opacity: 0;
+  -webkit-animation: fadeIn 750ms ease-in forwards;
+          animation: fadeIn 750ms ease-in forwards;
+}
+
+.hero-subtitle {
+  font-family: "Oxygen Mono", monospace;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.hero-subtitle::before, .hero-subtitle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-subtitle::before {
+  background: #0c0d17;
+  -webkit-animation: typewriter 3s steps(34) 750ms forwards;
+          animation: typewriter 3s steps(34) 750ms forwards;
+}
+
+.hero-subtitle::after {
+  width: 0.125em;
+  background: #fff;
+  -webkit-animation: typewriter 3s steps(34) 750ms forwards, blink 1s steps(34) infinite;
+          animation: typewriter 3s steps(34) 750ms forwards, blink 1s steps(34) infinite;
+}
+
+.hero-buttons {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.hero-buttons .btn {
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+}
+
+.hero-buttons .btn:first-child {
+  margin-right: 3em;
+  -webkit-animation: fadeIn 750ms ease-in 3750ms forwards;
+          animation: fadeIn 750ms ease-in 3750ms forwards;
+}
+
+.hero-buttons .btn:nth-child(2) {
+  -webkit-animation: fadeIn 750ms ease-in 4500ms forwards;
+          animation: fadeIn 750ms ease-in 4500ms forwards;
+}
+
+.btn {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #8430ea), color-stop(39%, #00b8d0), color-stop(94%, #0e72df));
+  background: linear-gradient(180deg, #8430ea 4%, #00b8d0 39%, #0e72df 94%);
+  padding: 1px;
+}
+
+.btn .btn-inner {
+  background: #0c0d17;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn .btn-inner .btn-link {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+
+.btn .btn-inner .btn-link:hover {
+  color: #8430ea;
+}
+
+.btn .btn-inner .btn-link:focus {
+  color: #fff;
+}
+
+.scroll-icon {
+  max-width: 48px;
+  margin: auto auto 10px auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.scroll-icon .animated-bounce {
+  opacity: 0;
+  -webkit-animation: fadeIn 750ms ease-in 5250ms forwards, bounce 1.5s ease-in-out 3.75s infinite alternate;
+          animation: fadeIn 750ms ease-in 5250ms forwards, bounce 1.5s ease-in-out 3.75s infinite alternate;
+}
+
+.scroll-icon .arrow-svg-container {
+  opacity: 0;
+  max-width: 24px;
+  -webkit-animation: fadeIn 750ms ease-in 5250ms forwards;
+          animation: fadeIn 750ms ease-in 5250ms forwards;
+}
+
+.about-section {
+  background-color: #13141c;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.about-section .instagram-feed {
+  width: 100%;
+  padding: 3em;
+}
+
+.about-section .about-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.about-section .about-text {
+  text-align: justify;
+  padding: 0 2em;
+  border-left: 1px solid #fff;
+}
+
+.contact-title {
+  margin-bottom: 0.5em;
+}
+
+.contact-text {
+  margin-bottom: 3em;
+}
+
+.contact-section {
+  background-color: #0c0d17;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.form-control {
+  background-color: #0c0d17 !important;
+  border-color: #0e72df;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #8430ea;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.contact-wpp-text {
+  margin-top: 3.5em;
+  margin-bottom: 1em;
+}
+
+.btn-pill {
+  border-radius: 50px;
+  width: 170px;
+}
+
+.btn-pill .btn-inner {
+  border-radius: 50px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.footer {
+  background-color: #0c0d17;
+  border-top: 2px solid #fff;
+  padding: 2em;
+}
+
+.copyright-text {
+  font-size: 1rem;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  color: #c5c5c5;
+}
+
+.footer-socials {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.footer-socials a:first-child {
+  margin-right: 1em;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,150 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Bootstrap CSS Import -->
+		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<link rel="icon" type="image/png" href="./img/Icone Insert.png" />
 		<title>Insert</title>
 	</head>
-	<body></body>
+	<body>
+		<main>
+			<section id="home" class="hero-section d-flex flex-column">
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="./index.html"><img src="./img/Icone Insert.png" alt="Ícone Insert" /></a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#home">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#sobre">Sobre Nós</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contato">Contato</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="hero-content d-flex flex-column">
+					<div class="logo d-flex justify-content-center">
+						<img src="./img/Logo Principal.png" alt="Logo Insert" class="img-fluid" />
+					</div>
+					<h2 class="hero-subtitle text-center">Inovação, tecnologia e eficiência.</h2>
+					<div class="hero-buttons d-flex justify-content-center">
+						<div class="btn">
+							<div class="btn-inner">
+								<a href="#" class="btn-link"><img src="./img/Icone Instagram.png" alt="Ícone Instagram" /> Instagram</a>
+							</div>
+						</div>
+						<div class="btn">
+							<div class="btn-inner">
+								<a href="#" class="btn-link"><img src="./img/Icone Facebook.png" alt="Ícone Instagram" /> Facebook</a>
+							</div>
+						</div>
+					</div>
+					<div class="scroll-icon d-flex flex-column align-items-center">
+						<a href="#sobre">
+							<object type="image/svg+xml" data="./img/svg/Mouse SVG.svg" class="img-fluid animated-bounce"></object>
+						</a>
+						<div class="arrow-svg-container">
+							<img src="./img/svg/Arrow SVG.svg" alt="" class="img-fluid" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="sobre" class="about-section container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-6 h-100">
+						<h1 class="text-center">Nosso Instagram</h1>
+						<div class="instagram-feed">
+							<div data-mc-src="48822c72-de0c-4f13-b0dd-269ede115d95#instagram"></div>
+							<script src="https://cdn2.woxo.tech/a.js#60d49fc981fa8a001507d57e" async data-usrc></script>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6">
+						<h1 class="about-title">Sobre Nós</h1>
+						<p class="about-text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, unde magni quas magnam deleniti voluptatum corporis atque similique molestiae laudantium earum reprehenderit
+							laboriosam eaque saepe aliquam maiores autem obcaecati et fuga amet libero mollitia enim incidunt. Suscipit nobis ipsam alias rem, quia accusantium repudiandae esse
+							provident necessitatibus expedita mollitia doloremque consequuntur dignissimos architecto blanditiis atque in obcaecati porro voluptas pariatur facilis excepturi minus aut
+							deserunt! Commodi deleniti asperiores tenetur iusto molestias nisi ad dolorum nesciunt sapiente dicta nam, ipsa accusantium deserunt doloremque excepturi suscipit optio non
+							cupiditate corporis temporibus laboriosam! Fugiat nam error inventore atque maiores cupiditate quisquam quas rerum.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="contato" class="contact-section container-fluid">
+				<h1 class="contact-title">Contato</h1>
+				<p class="contact-text">Quer um site como esse? Entre em contato e faça já o seu orçamento!</p>
+				<form class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-lg-4 offset-lg-2 mb-3">
+							<label for="name" class="form-label">Nome:</label>
+							<input type="text" class="form-control" id="name" placeholder="Seu Nome" required />
+						</div>
+						<div class="col-12 col-lg-4 mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Seu Email" required />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-8 offset-lg-2 mb-3">
+							<label for="msg" class="form-label">Como podemos ajudar?</label>
+							<input type="text-area" class="form-control" id="msg" placeholder="Sua Mensagem" autocomplete="none" required />
+						</div>
+					</div>
+					<div class="row d-flex">
+						<div class="col-4 offset-3 d-flex justify-content-end">
+							<div class="btn">
+								<div class="btn-inner">
+									<button type="submit" class="btn-link">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+				<p class="contact-wpp-text">Ou, caso prefira, nos envie uma mensagem via whatsapp!</p>
+				<div class="btn btn-pill">
+					<div class="btn-inner d-flex justify-content-center">
+						<a href="#" class="btn-link"><img src="./img/Icone Instagram.png" alt="ìcone Instagram" /> Instagram</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer d-flex justify-content-between">
+			<div class="footer-text">
+				<img src="./img/Logo+Nome.png" alt="Logo Insert" />
+				<p class="copyright-text">© Copyright Insert 2021</p>
+			</div>
+			<div class="footer-socials">
+				<a href="#"><img src="./img/Icone Instagram.png" alt="Instagram" /></a>
+				<a href="#"><img src="./img/Icone Facebook.png" alt="Facebook" /></a>
+			</div>
+		</footer>
+
+		<!-- JQuery, Popper.js and Bootstrap JS Imports -->
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
 </html>

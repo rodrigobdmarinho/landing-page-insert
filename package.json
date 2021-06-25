@@ -1,0 +1,23 @@
+{
+  "name": "landing-page-insert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoBDMarinho/landing-page-insert.git"
+  },
+  "author": "Rodrigo Marinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoBDMarinho/landing-page-insert/issues"
+  },
+  "homepage": "https://github.com/RodrigoBDMarinho/landing-page-insert#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0"
+  }
+}
