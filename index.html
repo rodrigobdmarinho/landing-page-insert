@@ -50,7 +50,7 @@
 						<img src="./img/Logo Principal.png" alt="Logo Insert" class="img-fluid" />
 					</div>
 					<h2 class="hero-subtitle text-center">Inovação, tecnologia e eficiência.</h2>
-					<div class="hero-buttons d-flex justify-content-center">
+					<div class="hero-buttons d-flex justify-content-center mt-5 mb-5">
 						<div class="btn">
 							<div class="btn-inner">
 								<a href="#" class="btn-link"><img src="./img/Icone Instagram.png" alt="Ícone Instagram" /> Instagram</a>
@@ -62,12 +62,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="scroll-icon d-flex flex-column align-items-center">
+					<div class="scroll-icon">
 						<a href="#sobre">
 							<object type="image/svg+xml" data="./img/svg/Mouse SVG.svg" class="img-fluid animated-bounce"></object>
 						</a>
 						<div class="arrow-svg-container">
-							<img src="./img/svg/Arrow SVG.svg" alt="" class="img-fluid" />
+							<a href="#sobre">
+								<img src="./img/svg/Arrow SVG.svg" alt="" class="img-fluid" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -112,13 +114,13 @@
 					<div class="row">
 						<div class="col-12 col-lg-8 offset-lg-2 mb-3">
 							<label for="msg" class="form-label">Como podemos ajudar?</label>
-							<input type="text-area" class="form-control" id="msg" placeholder="Sua Mensagem" autocomplete="none" required />
+							<textarea rows="5" class="form-control" id="msg" placeholder="Sua Mensagem" autocomplete="none" required></textarea>
 						</div>
 					</div>
 					<div class="row d-flex">
-						<div class="col-4 offset-3 d-flex justify-content-end">
-							<div class="btn">
-								<div class="btn-inner">
+						<div class="col d-flex justify-content-center">
+							<div class="btn mt-3">
+								<div class="btn-inner d-flex justify-content-center">
 									<button type="submit" class="btn-link">Enviar</button>
 								</div>
 							</div>
@@ -128,20 +130,22 @@
 				<p class="contact-wpp-text">Ou, caso prefira, nos envie uma mensagem via whatsapp!</p>
 				<div class="btn btn-pill">
 					<div class="btn-inner d-flex justify-content-center">
-						<a href="#" class="btn-link"><img src="./img/Icone Instagram.png" alt="ìcone Instagram" /> Instagram</a>
+						<a href="#" class="btn-link"><img src="./img/svg/Whatsapp SVG.svg" width="32" height="32" alt="ìcone Instagram" /> Instagram</a>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer class="footer d-flex justify-content-between">
-			<div class="footer-text">
-				<img src="./img/Logo+Nome.png" alt="Logo Insert" />
-				<p class="copyright-text">© Copyright Insert 2021</p>
-			</div>
-			<div class="footer-socials">
-				<a href="#"><img src="./img/Icone Instagram.png" alt="Instagram" /></a>
-				<a href="#"><img src="./img/Icone Facebook.png" alt="Facebook" /></a>
+		<footer class="footer container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-10 footer-text">
+					<img src="./img/Logo+Nome.png" alt="Logo Insert" />
+					<p class="copyright-text">© Copyright Insert 2021</p>
+				</div>
+				<div class="col-12 col-md-2 d-flex footer-socials">
+					<a href="#"><img src="./img/Icone Instagram.png" alt="Instagram" /></a>
+					<a href="#"><img src="./img/Icone Facebook.png" alt="Facebook" /></a>
+				</div>
 			</div>
 		</footer>
 
